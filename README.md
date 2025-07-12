@@ -98,8 +98,8 @@ uvicorn app.main:app --reload
 |--------|-------------------------|------------------------|
 | POST   | `/blog/create`          | Create a blog post     |
 | GET    | `/blog/blogs`           | Get all blog posts     |
-| GET    | `/blog/{title}`         | Get blog(s) by title   |
-| GET    | `/blog/{blog_id}`       | Get blog by ID         |
+| GET    | `/blog/by-title/{title}`| Get blog(s) by title   |
+| GET    | `/blog/by-id/{blog_id}` | Get blog by ID         |
 | PUT    | `/blog/{blog_id}`       | Update blog selectively|
 | DELETE | `/blog/{blog_id}`       | Delete blog + images   |
 
